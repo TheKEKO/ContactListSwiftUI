@@ -5,6 +5,7 @@
 //  Created by Aleksandr F. on 28.05.2022.
 //
 
+
 import SwiftUI
 
 struct PersonListDetailsView: View {
@@ -18,7 +19,6 @@ struct PersonListDetailsView: View {
                             .foregroundColor(.blue)
                         Text(person.phoneNumber)
                     }
-                    
                     HStack {
                         Image(systemName: "tray")
                             .foregroundColor(.blue)
@@ -28,7 +28,6 @@ struct PersonListDetailsView: View {
             }
         }
     }
-
 
 struct ContactDetailsView_Previews: PreviewProvider {
     static var previews: some View {
