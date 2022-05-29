@@ -11,6 +11,11 @@
 		D400006C284225DB0097AF14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400006B284225DB0097AF14 /* ContentView.swift */; };
 		D400006E284225DC0097AF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D400006D284225DC0097AF14 /* Assets.xcassets */; };
 		D4000071284225DC0097AF14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4000070284225DC0097AF14 /* Preview Assets.xcassets */; };
+		D4000078284227E20097AF14 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4000077284227E20097AF14 /* DataManager.swift */; };
+		D400007B284228B40097AF14 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400007A284228B40097AF14 /* Person.swift */; };
+		D400007E284231C30097AF14 /* PersonListDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400007D284231C30097AF14 /* PersonListDetailsView.swift */; };
+		D4000080284235A30097AF14 /* PersonDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400007F284235A30097AF14 /* PersonDetailedView.swift */; };
+		D4EB801B284281D300BF756D /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB801A284281D300BF756D /* PersonListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		D400006B284225DB0097AF14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D400006D284225DC0097AF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4000070284225DC0097AF14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4000077284227E20097AF14 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D400007A284228B40097AF14 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D400007D284231C30097AF14 /* PersonListDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListDetailsView.swift; sourceTree = "<group>"; };
+		D400007F284235A30097AF14 /* PersonDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailedView.swift; sourceTree = "<group>"; };
+		D4EB801A284281D300BF756D /* PersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				D4000069284225DB0097AF14 /* ContactListSwiftUIApp.swift */,
 				D400006B284225DB0097AF14 /* ContentView.swift */,
+				D400007F284235A30097AF14 /* PersonDetailedView.swift */,
+				D4EB801A284281D300BF756D /* PersonListView.swift */,
+				D400007D284231C30097AF14 /* PersonListDetailsView.swift */,
+				D400007C284228BF0097AF14 /* Models */,
+				D4000079284227E60097AF14 /* Services */,
 				D400006D284225DC0097AF14 /* Assets.xcassets */,
 				D400006F284225DC0097AF14 /* Preview Content */,
 			);
@@ -65,6 +80,22 @@
 				D4000070284225DC0097AF14 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4000079284227E60097AF14 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D4000077284227E20097AF14 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D400007C284228BF0097AF14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D400007A284228B40097AF14 /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D400007E284231C30097AF14 /* PersonListDetailsView.swift in Sources */,
 				D400006C284225DB0097AF14 /* ContentView.swift in Sources */,
+				D4EB801B284281D300BF756D /* PersonListView.swift in Sources */,
+				D4000078284227E20097AF14 /* DataManager.swift in Sources */,
+				D4000080284235A30097AF14 /* PersonDetailedView.swift in Sources */,
+				D400007B284228B40097AF14 /* Person.swift in Sources */,
 				D400006A284225DB0097AF14 /* ContactListSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
