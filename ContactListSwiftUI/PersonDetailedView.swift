@@ -5,7 +5,6 @@
 //  Created by Aleksandr F. on 28.05.2022.
 //
 
-
 import SwiftUI
 
 struct PersonDetailedView: View {
@@ -19,17 +18,10 @@ struct PersonDetailedView: View {
             Image(systemName:"person.fill")
                 .resizable()
                 .frame(width: 180, height: 180)
+                .padding()
             Form {
-                HStack {
-                    Image(systemName: "phone")
-                        .foregroundColor(.blue)
-                    Text(person.phoneNumber)
-                }
-                HStack {
-                    Image(systemName: "tray")
-                        .foregroundColor(.blue)
-                    Text(person.email)
-                }
+                Label(person.phoneNumber,systemImage: "phone")
+                Label(person.email,systemImage: "tray")
             }
         }
     }

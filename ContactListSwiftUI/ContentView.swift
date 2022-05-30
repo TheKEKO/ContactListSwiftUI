@@ -5,11 +5,10 @@
 //  Created by Aleksandr F. on 28.05.2022.
 //
 
-
 import SwiftUI
 
 struct ContentView: View {
-    let persons = Person.getContactList()
+    private let persons = Person.getContactList()
     @State private var search = ""
     
     var body: some View {

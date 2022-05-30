@@ -5,12 +5,11 @@
 //  Created by Aleksandr F. on 28.05.2022.
 //
 
-
 import SwiftUI
 
 struct PersonListView: View {
     let persons: [Person]
-
+    
     var body: some View {
         List(persons) { person in
             NavigationLink(destination: PersonDetailedView(person: person)) {

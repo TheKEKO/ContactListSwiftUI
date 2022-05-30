@@ -5,7 +5,6 @@
 //  Created by Aleksandr F. on 28.05.2022.
 //
 
-
 import SwiftUI
 
 struct Person: Identifiable {
@@ -46,7 +45,7 @@ extension Person {
                 email: emails[index],
                 phoneNumber: phones[index]
             )
-
+            
             persons.append(person)
         }
         return persons
@@ -56,9 +55,9 @@ extension Person {
 extension Color {
     static func random() -> Color {
         return Color (
-        red: .random(in: 0..<1),
-        green: .random(in: 0..<1),
-        blue: .random(in: 0..<1)
+            red: .random(in: 0..<1),
+            green: .random(in: 0..<1),
+            blue: .random(in: 0..<1)
         )
     }
 }
