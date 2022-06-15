@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Person: Identifiable {
-    
     let id = UUID()
     
     let name: String
@@ -23,7 +22,6 @@ struct Person: Identifiable {
 
 extension Person {
     static func getContactList() -> [Person] {
-        
         var persons: [Person] = []
         
         let names = DataManager.shared.names.shuffled()
